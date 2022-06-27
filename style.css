@@ -1,0 +1,52 @@
+body{
+  margin:0;
+}
+a{
+  color: gray;
+  text-decoration:none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+h1{
+  background-color: lightgreen;
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol{
+  background-color: lightgreen;
+  border-right: 1px solid gray;
+  width: 100px;
+  margin:0;
+  padding:20px;
+  padding-left: 20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr
+
+}
+#grid ol{
+  /*ol 태그 중 부모가 grid인 ol태그로 특정!!*/
+  padding-left:33px;
+}
+#grid #article{
+  padding-left: 25px;
+}
+@media(max-width:600px){
+  #grid{
+    display: block;
+  }
+ol{
+    border-right: none;
+}
+h1{
+  text-align: left;
+  border-bottom: none;
+  }
+}
