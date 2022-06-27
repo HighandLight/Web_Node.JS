@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Web </title>
+<meta charset="utf-8">
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>
+      <a href="index.html" title="This is Main">Web</a>
+    </h1>
+    <input type="button" value="Night mode" id= "mode_button" onclick = "
+      if(document.querySelector('#mode_button').value ==='Night mode') {
+      document.querySelector('body').style.backgroundColor = 'black'
+      document.querySelector('body').style.color = 'white'
+      document.querySelector('h1').style.backgroundColor = 'pink'
+      document.querySelector('ol').style.backgroundColor = 'pink'
+      document.querySelector('#mode_button').value = 'Light mode'
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white'
+      document.querySelector('body').style.color = 'black'
+      document.querySelector('h1').style.backgroundColor = 'lightgreen'
+      document.querySelector('ol').style.backgroundColor = 'lightgreen'
+      document.querySelector('#mode_button').value = 'Night mode'
+    }
+    ">
+<div id=grid>
+    <ol>
+      <a href="html.html"><li> HTML</li></a>
+      <a href="css.html" title="this is css"><li> CSS</li></a>
+      <a href="Java_script.html"><li>Java Script</li></a>
+    </ol>
+
+<div id="article">
+<h2>Web</h2>
+Welcome to Web
+<p>This is Web</p>
+</div>
+</div>
+</body>
+</html>
